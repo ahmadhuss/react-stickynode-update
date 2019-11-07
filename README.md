@@ -37,7 +37,7 @@ Another highlight is that `react-stickynode` can handle the case where a sticky 
 The sticky uses Modernizr `csstransforms3d` and `prefixed` ([link](http://modernizr.com/download/?-csstransforms3d-prefixed)) features to detect IE8/9, so it can downgrade not to use transform3d.
 
 ```js
-import Sticky from 'react-stickynode';
+import Sticky from 'react-stickynode-update';
 
 <Sticky enabled={true} top={50} bottomBoundary={1200}>
     <YourComponent/>
@@ -45,7 +45,7 @@ import Sticky from 'react-stickynode';
 ```
 
 ```js
-import Sticky from 'react-stickynode';
+import Sticky from 'react-stickynode-update';
 
 <Sticky top='#header' bottomBoundary='#content'>
     <YourComponent/>
@@ -78,7 +78,7 @@ You can be notified when the state of the sticky component changes by passing a 
 
 You can access the statuses as static constants to use for comparison.
 ```js
-import Sticky from 'react-stickynode';
+import Sticky from 'react-stickynode-update';
 
 const handleStateChange = (status) => {
     if (status.status === Sticky.STATUS_FIXED) {
@@ -94,7 +94,7 @@ const handleStateChange = (status) => {
 Also `Sticky` supports children functions:
 
 ```js
-import Sticky from 'react-stickynode';
+import Sticky from 'react-stickynode-update';
 
 <Sticky>
   {status => {
